@@ -1,5 +1,5 @@
 const cron = require('node-cron');
-const irrigacaoController = require('../controllers/irrigacaoController');
+const irrigacaoController = require('./controllers/irrigacaoController');
 
 // Exemplo: ligar irrigação todo dia às 18h
 cron.schedule('0 18 * * *', () => {
@@ -9,8 +9,8 @@ cron.schedule('0 18 * * *', () => {
     json: (msg) => console.log(msg)
   });
 });
-const cron = require('node-cron');
-const irrigacaoController = require('../controllers/irrigacaoController');
+
+const irrigacaoController = require('./controllers/irrigacaoController');
 
 // Exemplo: ligar irrigação todo dia às 18h
 cron.schedule('0 18 * * *', () => {
